@@ -1,0 +1,34 @@
+LUNA AI — GITHUB UPLOAD GUIDE
+
+IMPORTANT: Preserve the folder structure.
+
+After extracting this ZIP, open the luna-ai folder. Upload its CONTENTS to
+the ROOT of your GitHub repository (the repository named luna-ai).
+
+The GitHub repository root must contain:
+- app/                         (folder)
+  - api/chat/route.ts
+  - globals.css
+  - layout.tsx
+  - page.tsx
+- .env.example
+- .gitignore
+- next-env.d.ts
+- next.config.ts
+- package.json
+- README.md
+- tsconfig.json
+- vercel.json
+
+Do NOT upload this ZIP file itself.
+Do NOT upload .env.local or any API keys/passwords.
+Do NOT create a second nested luna-ai folder inside the GitHub repository.
+
+The previous upload placed some app files in the repository root.
+This corrected package puts them in the required app/ folder.
+When uploading, allow GitHub to replace the existing root-level copies of
+globals.css, layout.tsx and page.tsx if prompted. Those old root-level copies
+can be deleted after the correctly structured app/ folder is uploaded.
+
+The application still needs OPENAI_API_KEY configured in Vercel Environment
+Variables for AI chat to work. Never put that key in GitHub.
